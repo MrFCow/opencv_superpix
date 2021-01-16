@@ -32,5 +32,5 @@ class ImageProcessor:
 
   def __call__(self, base64_image, n_segments=10, sigma=3):
     img_array = self.convert_image_b64string_to_ndarray(base64_image)
-    result = self.produce_segments(img_array, n_segments=10, sigma=3)
+    result = self.produce_segments(img_array, n_segments, sigma)
     return result
